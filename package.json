@@ -1,0 +1,33 @@
+{
+  "@comment": "This file was generated from npm*.ts .",
+  "name": "ts-app-aws-infra",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "publishConfig": {
+    "main": "./dist/index.mjs",
+    "types": "./dist/index.d.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.427.0",
+    "@expo/spawn-async": "1.7.2"
+  },
+  "devDependencies": {
+    "typescript": "5.2.2",
+    "@types/node": "18.16.0",
+    "ts-node": "10.9.1",
+    "tslib": "2.4.0",
+    "shx": "0.3.4",
+    "del": "5.0.0",
+    "cross-env": "5.2.1",
+    "concurrently": "7.5.0",
+    "nodemon": "2.0.20",
+    "onchange": "7.1.0",
+    "esbuild": "0.16.7"
+  }
+}
