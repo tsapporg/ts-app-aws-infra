@@ -163,9 +163,9 @@ var require_isexe = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/which/which.js
+// node_modules/which/which.js
 var require_which = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/which/which.js"(exports, module) {
+  "node_modules/which/which.js"(exports, module) {
     var isWindows = process.platform === "win32" || process.env.OSTYPE === "cygwin" || process.env.OSTYPE === "msys";
     var path2 = __require("path");
     var COLON = isWindows ? ";" : ":";
@@ -257,9 +257,9 @@ var require_which = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/path-key/index.js
+// node_modules/path-key/index.js
 var require_path_key = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/path-key/index.js"(exports, module) {
+  "node_modules/path-key/index.js"(exports, module) {
     "use strict";
     var pathKey = (options = {}) => {
       const environment = options.env || process.env;
@@ -274,9 +274,9 @@ var require_path_key = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/util/resolveCommand.js
+// node_modules/cross-spawn/lib/util/resolveCommand.js
 var require_resolveCommand = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/util/resolveCommand.js"(exports, module) {
+  "node_modules/cross-spawn/lib/util/resolveCommand.js"(exports, module) {
     "use strict";
     var path2 = __require("path");
     var which = require_which();
@@ -316,9 +316,9 @@ var require_resolveCommand = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/util/escape.js
+// node_modules/cross-spawn/lib/util/escape.js
 var require_escape = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/util/escape.js"(exports, module) {
+  "node_modules/cross-spawn/lib/util/escape.js"(exports, module) {
     "use strict";
     var metaCharsRegExp = /([()\][%!^"`<>&|;, *?])/g;
     function escapeCommand(arg) {
@@ -341,17 +341,17 @@ var require_escape = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/shebang-regex/index.js
+// node_modules/shebang-regex/index.js
 var require_shebang_regex = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/shebang-regex/index.js"(exports, module) {
+  "node_modules/shebang-regex/index.js"(exports, module) {
     "use strict";
     module.exports = /^#!(.*)/;
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/shebang-command/index.js
+// node_modules/shebang-command/index.js
 var require_shebang_command = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/shebang-command/index.js"(exports, module) {
+  "node_modules/shebang-command/index.js"(exports, module) {
     "use strict";
     var shebangRegex = require_shebang_regex();
     module.exports = (string = "") => {
@@ -369,9 +369,9 @@ var require_shebang_command = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/util/readShebang.js
+// node_modules/cross-spawn/lib/util/readShebang.js
 var require_readShebang = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/util/readShebang.js"(exports, module) {
+  "node_modules/cross-spawn/lib/util/readShebang.js"(exports, module) {
     "use strict";
     var fs = __require("fs");
     var shebangCommand = require_shebang_command();
@@ -391,9 +391,9 @@ var require_readShebang = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/parse.js
+// node_modules/cross-spawn/lib/parse.js
 var require_parse = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/parse.js"(exports, module) {
+  "node_modules/cross-spawn/lib/parse.js"(exports, module) {
     "use strict";
     var path2 = __require("path");
     var resolveCommand = require_resolveCommand();
@@ -453,9 +453,9 @@ var require_parse = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/enoent.js
+// node_modules/cross-spawn/lib/enoent.js
 var require_enoent = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/cross-spawn/lib/enoent.js"(exports, module) {
+  "node_modules/cross-spawn/lib/enoent.js"(exports, module) {
     "use strict";
     var isWin = process.platform === "win32";
     function notFoundError(original, syscall) {
@@ -503,9 +503,9 @@ var require_enoent = __commonJS({
   }
 });
 
-// node_modules/@expo/spawn-async/node_modules/cross-spawn/index.js
+// node_modules/cross-spawn/index.js
 var require_cross_spawn = __commonJS({
-  "node_modules/@expo/spawn-async/node_modules/cross-spawn/index.js"(exports, module) {
+  "node_modules/cross-spawn/index.js"(exports, module) {
     "use strict";
     var cp = __require("child_process");
     var parse2 = require_parse();
@@ -2883,9 +2883,9 @@ var require_abort = __commonJS({
   }
 });
 
-// node_modules/@smithy/types/dist-cjs/auth.js
+// node_modules/@smithy/types/dist-cjs/auth/auth.js
 var require_auth = __commonJS({
-  "node_modules/@smithy/types/dist-cjs/auth.js"(exports) {
+  "node_modules/@smithy/types/dist-cjs/auth/auth.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.HttpAuthLocation = void 0;
@@ -2894,6 +2894,67 @@ var require_auth = __commonJS({
       HttpAuthLocation2["HEADER"] = "header";
       HttpAuthLocation2["QUERY"] = "query";
     })(HttpAuthLocation = exports.HttpAuthLocation || (exports.HttpAuthLocation = {}));
+  }
+});
+
+// node_modules/@smithy/types/dist-cjs/auth/HttpApiKeyAuth.js
+var require_HttpApiKeyAuth = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/auth/HttpApiKeyAuth.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.HttpApiKeyAuthLocation = void 0;
+    var HttpApiKeyAuthLocation;
+    (function(HttpApiKeyAuthLocation2) {
+      HttpApiKeyAuthLocation2["HEADER"] = "header";
+      HttpApiKeyAuthLocation2["QUERY"] = "query";
+    })(HttpApiKeyAuthLocation = exports.HttpApiKeyAuthLocation || (exports.HttpApiKeyAuthLocation = {}));
+  }
+});
+
+// node_modules/@smithy/types/dist-cjs/auth/HttpAuthScheme.js
+var require_HttpAuthScheme = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/auth/HttpAuthScheme.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+  }
+});
+
+// node_modules/@smithy/types/dist-cjs/auth/HttpAuthSchemeProvider.js
+var require_HttpAuthSchemeProvider = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/auth/HttpAuthSchemeProvider.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+  }
+});
+
+// node_modules/@smithy/types/dist-cjs/auth/HttpSigner.js
+var require_HttpSigner = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/auth/HttpSigner.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+  }
+});
+
+// node_modules/@smithy/types/dist-cjs/auth/IdentityProviderConfig.js
+var require_IdentityProviderConfig = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/auth/IdentityProviderConfig.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+  }
+});
+
+// node_modules/@smithy/types/dist-cjs/auth/index.js
+var require_auth2 = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/auth/index.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var tslib_1 = (init_tslib_es64(), __toCommonJS(tslib_es6_exports4));
+    tslib_1.__exportStar(require_auth(), exports);
+    tslib_1.__exportStar(require_HttpApiKeyAuth(), exports);
+    tslib_1.__exportStar(require_HttpAuthScheme(), exports);
+    tslib_1.__exportStar(require_HttpAuthSchemeProvider(), exports);
+    tslib_1.__exportStar(require_HttpSigner(), exports);
+    tslib_1.__exportStar(require_IdentityProviderConfig(), exports);
   }
 });
 
@@ -3167,6 +3228,14 @@ var require_http = __commonJS({
   }
 });
 
+// node_modules/@smithy/types/dist-cjs/identity/apiKeyIdentity.js
+var require_apiKeyIdentity = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/identity/apiKeyIdentity.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+  }
+});
+
 // node_modules/@smithy/types/dist-cjs/identity/awsCredentialIdentity.js
 var require_awsCredentialIdentity = __commonJS({
   "node_modules/@smithy/types/dist-cjs/identity/awsCredentialIdentity.js"(exports) {
@@ -3183,14 +3252,24 @@ var require_identity = __commonJS({
   }
 });
 
+// node_modules/@smithy/types/dist-cjs/identity/tokenIdentity.js
+var require_tokenIdentity = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/identity/tokenIdentity.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+  }
+});
+
 // node_modules/@smithy/types/dist-cjs/identity/index.js
 var require_identity2 = __commonJS({
   "node_modules/@smithy/types/dist-cjs/identity/index.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var tslib_1 = (init_tslib_es64(), __toCommonJS(tslib_es6_exports4));
+    tslib_1.__exportStar(require_apiKeyIdentity(), exports);
     tslib_1.__exportStar(require_awsCredentialIdentity(), exports);
     tslib_1.__exportStar(require_identity(), exports);
+    tslib_1.__exportStar(require_tokenIdentity(), exports);
   }
 });
 
@@ -3330,6 +3409,14 @@ var require_client_payload_blob_type_narrow = __commonJS({
   }
 });
 
+// node_modules/@smithy/types/dist-cjs/transform/no-undefined.js
+var require_no_undefined = __commonJS({
+  "node_modules/@smithy/types/dist-cjs/transform/no-undefined.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+  }
+});
+
 // node_modules/@smithy/types/dist-cjs/transform/type-transform.js
 var require_type_transform = __commonJS({
   "node_modules/@smithy/types/dist-cjs/transform/type-transform.js"(exports) {
@@ -3369,7 +3456,7 @@ var require_dist_cjs = __commonJS({
     Object.defineProperty(exports, "__esModule", { value: true });
     var tslib_1 = (init_tslib_es64(), __toCommonJS(tslib_es6_exports4));
     tslib_1.__exportStar(require_abort(), exports);
-    tslib_1.__exportStar(require_auth(), exports);
+    tslib_1.__exportStar(require_auth2(), exports);
     tslib_1.__exportStar(require_blob_payload_input_types(), exports);
     tslib_1.__exportStar(require_checksum(), exports);
     tslib_1.__exportStar(require_client(), exports);
@@ -3398,6 +3485,7 @@ var require_dist_cjs = __commonJS({
     tslib_1.__exportStar(require_streaming_blob_payload_output_types(), exports);
     tslib_1.__exportStar(require_transfer(), exports);
     tslib_1.__exportStar(require_client_payload_blob_type_narrow(), exports);
+    tslib_1.__exportStar(require_no_undefined(), exports);
     tslib_1.__exportStar(require_type_transform(), exports);
     tslib_1.__exportStar(require_uri(), exports);
     tslib_1.__exportStar(require_util(), exports);
@@ -14158,7 +14246,7 @@ var require_abort2 = __commonJS({
 });
 
 // node_modules/@aws-sdk/types/dist-cjs/auth.js
-var require_auth2 = __commonJS({
+var require_auth3 = __commonJS({
   "node_modules/@aws-sdk/types/dist-cjs/auth.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -14479,7 +14567,7 @@ var require_dist_cjs19 = __commonJS({
     Object.defineProperty(exports, "__esModule", { value: true });
     var tslib_1 = (init_tslib_es617(), __toCommonJS(tslib_es6_exports17));
     tslib_1.__exportStar(require_abort2(), exports);
-    tslib_1.__exportStar(require_auth2(), exports);
+    tslib_1.__exportStar(require_auth3(), exports);
     tslib_1.__exportStar(require_blob_types(), exports);
     tslib_1.__exportStar(require_checksum3(), exports);
     tslib_1.__exportStar(require_client2(), exports);
@@ -18587,7 +18675,7 @@ var require_parseIni = __commonJS({
     exports.parseIni = void 0;
     var types_1 = require_dist_cjs();
     var loadSharedConfigFiles_1 = require_loadSharedConfigFiles();
-    var prefixKeyRegex = /^([\w-]+)\s(["'])?([\w-@\+]+)\2$/;
+    var prefixKeyRegex = /^([\w-]+)\s(["'])?([\w-@\+\.%:/]+)\2$/;
     var profileNameBlockList = ["__proto__", "profile __proto__"];
     var parseIni = (iniData) => {
       const map = {};
@@ -19059,10 +19147,11 @@ var require_endpointMiddleware = __commonJS({
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.endpointMiddleware = void 0;
+    var util_middleware_1 = require_dist_cjs12();
     var getEndpointFromInstructions_1 = require_getEndpointFromInstructions();
     var endpointMiddleware = ({ config, instructions }) => {
       return (next, context) => async (args) => {
-        var _a, _b;
+        var _a, _b, _c;
         const endpoint = await (0, getEndpointFromInstructions_1.getEndpointFromInstructions)(args.input, {
           getEndpointParameterInstructions() {
             return instructions;
@@ -19074,6 +19163,17 @@ var require_endpointMiddleware = __commonJS({
         if (authScheme) {
           context["signing_region"] = authScheme.signingRegion;
           context["signing_service"] = authScheme.signingName;
+          const smithyContext = (0, util_middleware_1.getSmithyContext)(context);
+          const httpAuthOption = (_c = smithyContext === null || smithyContext === void 0 ? void 0 : smithyContext.selectedHttpAuthScheme) === null || _c === void 0 ? void 0 : _c.httpAuthOption;
+          if (httpAuthOption) {
+            httpAuthOption.signingProperties = Object.assign(httpAuthOption.signingProperties || {}, {
+              signing_region: authScheme.signingRegion,
+              signingRegion: authScheme.signingRegion,
+              signing_service: authScheme.signingName,
+              signingName: authScheme.signingName,
+              signingRegionSet: authScheme.signingRegionSet
+            }, authScheme.properties);
+          }
         }
         return next({
           ...args
@@ -38637,6 +38737,25 @@ var require_fromContainerMetadata = __commonJS({
   }
 });
 
+// node_modules/@smithy/credential-provider-imds/dist-cjs/error/InstanceMetadataV1FallbackError.js
+var require_InstanceMetadataV1FallbackError = __commonJS({
+  "node_modules/@smithy/credential-provider-imds/dist-cjs/error/InstanceMetadataV1FallbackError.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.InstanceMetadataV1FallbackError = void 0;
+    var property_provider_1 = require_dist_cjs8();
+    var InstanceMetadataV1FallbackError = class extends property_provider_1.CredentialsProviderError {
+      constructor(message, tryNextLink = true) {
+        super(message, tryNextLink);
+        this.tryNextLink = tryNextLink;
+        this.name = "InstanceMetadataV1FallbackError";
+        Object.setPrototypeOf(this, InstanceMetadataV1FallbackError.prototype);
+      }
+    };
+    exports.InstanceMetadataV1FallbackError = InstanceMetadataV1FallbackError;
+  }
+});
+
 // node_modules/@smithy/credential-provider-imds/dist-cjs/config/Endpoint.js
 var require_Endpoint2 = __commonJS({
   "node_modules/@smithy/credential-provider-imds/dist-cjs/config/Endpoint.js"(exports) {
@@ -38791,7 +38910,9 @@ var require_fromInstanceMetadata = __commonJS({
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.fromInstanceMetadata = void 0;
+    var node_config_provider_1 = require_dist_cjs26();
     var property_provider_1 = require_dist_cjs8();
+    var InstanceMetadataV1FallbackError_1 = require_InstanceMetadataV1FallbackError();
     var httpRequest_1 = require_httpRequest2();
     var ImdsCredentials_1 = require_ImdsCredentials();
     var RemoteProviderInit_1 = require_RemoteProviderInit();
@@ -38800,13 +38921,51 @@ var require_fromInstanceMetadata = __commonJS({
     var staticStabilityProvider_1 = require_staticStabilityProvider();
     var IMDS_PATH = "/latest/meta-data/iam/security-credentials/";
     var IMDS_TOKEN_PATH = "/latest/api/token";
+    var AWS_EC2_METADATA_V1_DISABLED = "AWS_EC2_METADATA_V1_DISABLED";
+    var PROFILE_AWS_EC2_METADATA_V1_DISABLED = "ec2_metadata_v1_disabled";
+    var X_AWS_EC2_METADATA_TOKEN = "x-aws-ec2-metadata-token";
     var fromInstanceMetadata = (init = {}) => (0, staticStabilityProvider_1.staticStabilityProvider)(getInstanceImdsProvider(init), { logger: init.logger });
     exports.fromInstanceMetadata = fromInstanceMetadata;
     var getInstanceImdsProvider = (init) => {
       let disableFetchToken = false;
+      const { logger, profile } = init;
       const { timeout, maxRetries } = (0, RemoteProviderInit_1.providerConfigFromInit)(init);
       const getCredentials = async (maxRetries2, options) => {
-        const profile = (await (0, retry_1.retry)(async () => {
+        var _a;
+        const isImdsV1Fallback = disableFetchToken || ((_a = options.headers) === null || _a === void 0 ? void 0 : _a[X_AWS_EC2_METADATA_TOKEN]) == null;
+        if (isImdsV1Fallback) {
+          let fallbackBlockedFromProfile = false;
+          let fallbackBlockedFromProcessEnv = false;
+          const configValue = await (0, node_config_provider_1.loadConfig)({
+            environmentVariableSelector: (env) => {
+              const envValue = env[AWS_EC2_METADATA_V1_DISABLED];
+              fallbackBlockedFromProcessEnv = !!envValue && envValue !== "false";
+              if (envValue === void 0) {
+                throw new property_provider_1.CredentialsProviderError(`${AWS_EC2_METADATA_V1_DISABLED} not set in env, checking config file next.`);
+              }
+              return fallbackBlockedFromProcessEnv;
+            },
+            configFileSelector: (profile2) => {
+              const profileValue = profile2[PROFILE_AWS_EC2_METADATA_V1_DISABLED];
+              fallbackBlockedFromProfile = !!profileValue && profileValue !== "false";
+              return fallbackBlockedFromProfile;
+            },
+            default: false
+          }, {
+            profile
+          })();
+          if (init.ec2MetadataV1Disabled || configValue) {
+            const causes = [];
+            if (init.ec2MetadataV1Disabled)
+              causes.push("credential provider initialization (runtime option ec2MetadataV1Disabled)");
+            if (fallbackBlockedFromProfile)
+              causes.push(`config file profile (${PROFILE_AWS_EC2_METADATA_V1_DISABLED})`);
+            if (fallbackBlockedFromProcessEnv)
+              causes.push(`process environment variable (${AWS_EC2_METADATA_V1_DISABLED})`);
+            throw new InstanceMetadataV1FallbackError_1.InstanceMetadataV1FallbackError(`AWS EC2 Metadata v1 fallback has been blocked by AWS SDK configuration in the following: [${causes.join(", ")}].`);
+          }
+        }
+        const imdsProfile = (await (0, retry_1.retry)(async () => {
           let profile2;
           try {
             profile2 = await getProfile(options);
@@ -38821,7 +38980,7 @@ var require_fromInstanceMetadata = __commonJS({
         return (0, retry_1.retry)(async () => {
           let creds;
           try {
-            creds = await getCredentialsFromProfile(profile, options);
+            creds = await getCredentialsFromProfile(imdsProfile, options);
           } catch (err) {
             if (err.statusCode === 401) {
               disableFetchToken = false;
@@ -38834,6 +38993,7 @@ var require_fromInstanceMetadata = __commonJS({
       return async () => {
         const endpoint = await (0, getInstanceMetadataEndpoint_1.getInstanceMetadataEndpoint)();
         if (disableFetchToken) {
+          logger === null || logger === void 0 ? void 0 : logger.debug("AWS SDK Instance Metadata", "using v1 fallback (no token fetch)");
           return getCredentials(maxRetries, { ...endpoint, timeout });
         } else {
           let token;
@@ -38847,12 +39007,13 @@ var require_fromInstanceMetadata = __commonJS({
             } else if (error.message === "TimeoutError" || [403, 404, 405].includes(error.statusCode)) {
               disableFetchToken = true;
             }
+            logger === null || logger === void 0 ? void 0 : logger.debug("AWS SDK Instance Metadata", "using v1 fallback (initial)");
             return getCredentials(maxRetries, { ...endpoint, timeout });
           }
           return getCredentials(maxRetries, {
             ...endpoint,
             headers: {
-              "x-aws-ec2-metadata-token": token
+              [X_AWS_EC2_METADATA_TOKEN]: token
             },
             timeout
           });
@@ -51880,15 +52041,16 @@ import { fileURLToPath } from "url";
 var __filename = fileURLToPath(import.meta.url);
 var __dirname = path.dirname(__filename);
 var LocalDynamoDB = class {
+  constructor(port, tables) {
+    this.streamArns = /* @__PURE__ */ new Map();
+    this.port = port;
+    this.tables = tables;
+  }
   static async setup(port, tables) {
     const localDynamo = new LocalDynamoDB(port, tables);
     await localDynamo.start();
     await localDynamo.createTables();
     return localDynamo;
-  }
-  constructor(port, tables) {
-    this.port = port;
-    this.tables = tables;
   }
   async start() {
     console.debug("starting local dynamodb process");
@@ -51913,7 +52075,9 @@ var LocalDynamoDB = class {
     for (const table of this.tables) {
       console.debug(`creating local dynamodb table: ${table.TableName}`);
       try {
-        await localDynamoDBClient.send(new import_client_dynamodb.CreateTableCommand(table));
+        const createTableResponse = await localDynamoDBClient.send(new import_client_dynamodb.CreateTableCommand(table));
+        console.debug("create table response", createTableResponse);
+        this.streamArns.set(table.TableName, createTableResponse.TableDescription?.LatestStreamArn);
       } catch (error) {
         console.error(error);
       }
