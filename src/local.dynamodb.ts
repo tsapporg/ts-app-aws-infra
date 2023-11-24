@@ -14,6 +14,7 @@ const __dirname = path.dirname(__filename);
 export class LocalDynamoDB {
   port: number;
   tables: CreateTableInput[];
+  streamArns: Map<string, string> = new Map<string, string>();
   
   localDynamoDBProcess?: ChildProcess;
 
@@ -61,7 +62,10 @@ export class LocalDynamoDB {
       console.debug(`creating local dynamodb table: ${table.TableName}`);
 
       try {
-        await localDynamoDBClient.send(new CreateTableCommand(table));
+        const createTableResponse = await localDynamoDBClient.send(new CreateTableCommand(table));
+        console.debug('create table response', createTableResponse);
+        
+        this.streamArns.set(table.TableName!, createTableResponse.TableDescription?.LatestStreamArn!);
       } catch (error) {
         console.error(error);
       }
